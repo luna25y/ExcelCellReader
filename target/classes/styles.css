@@ -1,0 +1,24 @@
+.root {
+    -fx-font-family: "System";
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.text-field {
+    -fx-padding: 8px;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+} 
