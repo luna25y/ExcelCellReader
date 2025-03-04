@@ -50,8 +50,8 @@ public class ExcelReaderApp extends Application {
         websiteIcon.setFitHeight(24);
         websiteIcon.setFitWidth(24);
 
-        githubIcon.setOnMouseClicked(e -> getHostServices().showDocument("https://github.com/yourusername"));
-        websiteIcon.setOnMouseClicked(e -> getHostServices().showDocument("https://yourwebsite.com"));
+        githubIcon.setOnMouseClicked(e -> getHostServices().showDocument("https://github.com/luna25y"));
+        websiteIcon.setOnMouseClicked(e -> getHostServices().showDocument("https://www.luna25y.com"));
 
         linksBox.getChildren().addAll(githubIcon, websiteIcon);
 
