@@ -29,6 +29,16 @@
             <version>${javafx.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-base</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>5.2.3</version>
@@ -68,6 +78,14 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>com.excelreader.Main</mainClass>
+                    <launcher>app</launcher>
+                    <jlinkImageName>excel-reader</jlinkImageName>
+                    <options>
+                        <option>--add-opens</option>
+                        <option>java.base/java.lang=ALL-UNNAMED</option>
+                        <option>--add-modules</option>
+                        <option>javafx.controls,javafx.graphics</option>
+                    </options>
                 </configuration>
             </plugin>
         </plugins>
