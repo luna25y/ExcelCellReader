@@ -1,2 +1,6 @@
 README.md
 .vscode
+target/
+*.class
+*.iml
+.log
